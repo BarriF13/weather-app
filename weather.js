@@ -1,9 +1,9 @@
 // -1 
 class Weather{
-  constructor(city, state){
+  constructor(city, country){
     this.apiKey = '22b6349f3ad51a1c5f25604ba74dc1bd';
     this.city = city;
-    this.state = state;
+    this.country = country;
   }
 // -2 fetch weather from API
 
@@ -17,8 +17,8 @@ async getWeather(){
       return responseData;
     }
     // -3 Change weather location
-    changeLocation(city, state){
+    changeLocation(city, country){
       this.city = city;
-      this.state = state;
+      this.country = country;
     }
 }
