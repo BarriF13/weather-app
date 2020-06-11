@@ -16,7 +16,7 @@ async getWeather(){
   //Original return responseData.current_observation;
       return responseData;
     }
-    // Change weather location
+    // -3 Change weather location
     changeLocation(city, state){
       this.city = city;
       this.state = state;
